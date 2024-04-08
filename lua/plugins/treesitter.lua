@@ -1,7 +1,7 @@
 return {
   {
     'nvim-treesitter/nvim-treesitter',
-    build = ':TSUpdate',
+    build = ':TSUpdate<CR>',
     config = function()
       require'nvim-treesitter.configs'.setup {
         ensure_installed = {"lua", "python", "elixir", "heex", "eex", "angular", "typescript"}, -- only install parsers for elixir and heex
